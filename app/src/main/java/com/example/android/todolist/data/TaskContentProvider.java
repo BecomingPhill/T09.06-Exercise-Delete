@@ -182,6 +182,9 @@ public class TaskContentProvider extends ContentProvider {
                 mSelectionArgs);
         break;
 
+            default:
+                throw new UnsupportedOperationException("Unknown uri: " + uri);
+
         }
 
 
